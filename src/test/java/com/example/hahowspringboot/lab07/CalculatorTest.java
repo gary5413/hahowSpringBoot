@@ -1,10 +1,13 @@
 package com.example.hahowspringboot.lab07;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
+    @Disabled
     @Test
     public void add(){
         Calculator calculator=new Calculator();
@@ -17,6 +20,7 @@ public class CalculatorTest {
 //      斷言值為true
         assertTrue(result>1);
     }
+    @DisplayName("測試除法問題")
     @Test
     public void divide(){
         Calculator calculator = new Calculator();
